@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+
+nav{
+   width: 100%;
+   height: 80px;
+   background-color: black;
+   line-height: 10px;
+    
+}
+
+
+
+nav img{
+    width: 60px;
+    cursor: pointer;
+}
+
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    
+           
+}
+.nav-links ul li a{
+    color: #14d414;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
